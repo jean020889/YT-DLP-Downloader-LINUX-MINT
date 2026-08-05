@@ -1,0 +1,65 @@
+🇪🇸 Guía de Instalación e Integración en Linux Mint
+1. Instalación de Dependencias del Sistema
+Asegúrate de tener instalada la biblioteca PyQt6 en tu sistema ejecutando en la terminal:
+
+Bash
+sudo apt update && sudo apt install -y python3-pyqt6
+2. Probar la Aplicación
+Ejecuta el archivo desde la terminal para verificar la interfaz:
+
+Bash
+python3 app.py
+3. Convertir en Aplicación de Sistema (Menú de Inicio)
+Paso A: Hacer el script ejecutable y moverlo al PATH
+Bash
+chmod +x app.py
+sudo mv app.py /usr/local/bin/ytdlp-gui
+Paso B: Crear el archivo de acceso directo (.desktop)
+Bash
+sudo nano /usr/share/applications/ytdlp-gui.desktop
+Paso C: Pegar la siguiente configuración
+Ini, TOML
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=YT-DLP Downloader
+Comment=Descargador de audio y video con interfaz gráfica
+Exec=/usr/local/bin/ytdlp-gui
+Icon=folder-download
+Categories=Network;AudioVideo;
+Terminal=false
+StartupNotify=true
+Guarda los cambios con Ctrl + O, presiona ENTER y sal con Ctrl + X.
+
+
+🇬🇧 Installation and Integration Guide for Linux Mint
+1. Install System Dependencies
+Ensure the PyQt6 library is installed on your system by running:
+
+Bash
+sudo apt update && sudo apt install -y python3-pyqt6
+2. Test the Application
+Run the script directly from the terminal to verify the GUI:
+
+Bash
+python3 app.py
+3. Convert into a System Application (Start Menu)
+Step A: Make the script executable and move it to PATH
+Bash
+chmod +x app.py
+sudo mv app.py /usr/local/bin/ytdlp-gui
+Step B: Create the desktop entry file (.desktop)
+Bash
+sudo nano /usr/share/applications/ytdlp-gui.desktop
+Step C: Paste the following configuration
+Ini, TOML
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=YT-DLP Downloader
+Comment=Audio and video downloader with graphical interface
+Exec=/usr/local/bin/ytdlp-gui
+Icon=folder-download
+Categories=Network;AudioVideo;
+Terminal=false
+StartupNotify=true
