@@ -1,4 +1,4 @@
-# --------------------------------- ENGLISH -------------------------------------
+# ------------------------------- ENGLISH -----------------------------------
 
 # 📥 YT-DLP Downloader for Linux Mint (PyQt6 GUI)
 
@@ -31,7 +31,7 @@ sudo apt update
 sudo apt install python3 python3-pip ffmpeg yt-dlp -y
 ```
 
-# --------------------------------- ESPAÑOL -------------------------------------
+# ------------------------------- ESPAÑOL -----------------------------------
 
 # 📥 YT-DLP Downloader for Linux Mint (PyQt6 GUI)
 
