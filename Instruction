@@ -1,5 +1,5 @@
 Guía de Instalación y Despliegue 
-Markdown
+
 # YT-DLP Downloader for Linux Mint
 
 Una interfaz gráfica liviana construida en **PyQt6** para la descarga de videos y audio mediante `yt-dlp`.
