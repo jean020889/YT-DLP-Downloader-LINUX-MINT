@@ -1,5 +1,3 @@
-# YT-DLP-Downloader-LINUX-MINT
-
 # 📥 YT-DLP Downloader for Linux Mint (PyQt6 GUI)
 
 ![Linux Mint](https://img.shields.io/badge/Linux_Mint-22.x-green?logo=linuxmint&logoColor=white)
