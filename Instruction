@@ -3,4 +3,4 @@ Ejecuta en la terminal:
 
 Bash
 sudo nano /opt/ytdlp-gui/app.py
-Pega el código completo de Python dentro del editor:
+Pega el código completo de main.py dentro del editor:
