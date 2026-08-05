@@ -1,23 +1,73 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# ==========================================
+# Python & Bytecode
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual Environments (Entornos Virtuales)
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ==========================================
+# IDEs & Editor Configuration
+# ==========================================
+# Visual Studio Code
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+
+# Editors secundarios
+*.swp
+*.swo
+*~
+
+# ==========================================
+# PyInstaller / Executables / Build
+# ==========================================
+build/
+dist/
+*.spec
+*.egg-info/
+.eggs/
+
+# ==========================================
+# Operating System Files (Linux / Desktop)
+# ==========================================
+.DS_Store
+Thumbs.db
+*.desktop.bak
+
+# ==========================================
+# Temporary Downloads & Media Output
+# ==========================================
+*.part
+*.ytdl
+*.mp3
+*.mp4
+*.m4a
+*.webm
+*.mkv
+Downloads/
+descargas/
+
+# ==========================================
+# Logs & Testing
+# ==========================================
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
