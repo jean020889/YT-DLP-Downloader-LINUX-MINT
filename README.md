@@ -29,8 +29,6 @@ The system must have the `yt-dlp` binary and core system tools installed (such a
 ```bash
 sudo apt update
 sudo apt install python3 python3-pip ffmpeg yt-dlp -y
-
--------------------------------------------------------------------------------------------------------
 ```
 
 # --------------------------------- ESPAÑOL -------------------------------------
