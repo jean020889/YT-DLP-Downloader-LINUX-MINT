@@ -1,3 +1,5 @@
+# ------------------------ ENGLISH -------------------------------------
+
 # ⚙️ Complete System Installation and Deployment Guide
 
 ### System Prerequisites (Linux Mint)
