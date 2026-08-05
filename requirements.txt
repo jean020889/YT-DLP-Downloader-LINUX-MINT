@@ -1,7 +1,7 @@
 ytdlp-gui-mint/
-├── app.py              # Código fuente principal de PyQt6 (estandarizado)
-├── requirements.txt     # Dependencias de Python (PyQt6, yt-dlp)
-├── Instruction.md      # Guía paso a paso para instalación e integración (.desktop)
-├── README.md           # Presentación general del proyecto y características
-├── LICENSE             # Licencia libre (MIT)
-└── .gitignore          # Archivos excluidos de control de versiones (__pycache__, etc.)
+├── app.py              # Main PyQt6 source code (standardized)
+├── requirements.txt    # Python dependencies (PyQt6, yt-dlp)
+├── Instruction.md      # Step-by-step installation and integration guide (.desktop)
+├── README.md           # General project overview and features
+├── LICENSE             # Open source license (MIT)
+└── .gitignore          # Files excluded from version control (__pycache__, etc.)
