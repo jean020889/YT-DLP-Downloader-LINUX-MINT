@@ -1,56 +1,83 @@
+Guía de Instalación y Despliegue 
+Markdown
+# YT-DLP Downloader for Linux Mint
 
-Paso 1: Crear el archivo directamente en /opt
-Ejecuta en la terminal:
+Una interfaz gráfica liviana construida en **PyQt6** para la descarga de videos y audio mediante `yt-dlp`.
+
+---
+
+## 🛠️ Prerrequisitos
+
+Antes de instalar la aplicación, instala las dependencias nativas del sistema desde la terminal de Linux Mint:
+
+```bash
+sudo apt update
+sudo apt install -y python3 python3-pyqt6 yt-dlp ffmpeg git
+📥 Instalación Rápida
+Opción A: Ejecución desde el Repositorio (Modo Portátil)
+Clonar el repositorio:
 
 Bash
-sudo nano /opt/ytdlp-gui/app.py
-Pega el código completo de main.py dentro del editor:
+git clone [https://github.com/jean020889/YT-DLP-Downloader-LINUX-MINT.git](https://github.com/jean020889/YT-DLP-Downloader-LINUX-MINT.git)
+cd YT-DLP-Downloader-LINUX-MINT
+Asignar permisos de ejecución e iniciar:
 
+Bash
+chmod +x app.py
+python3 app.py
+Opción B: Instalación Integrada en el Sistema (Tipo Programa)
+Para desplegar la aplicación en /opt, disponer del comando global ytdlp-gui y agregar el ícono al menú de aplicaciones de Linux Mint:
 
-Guarda presionando Ctrl + O, confirma con ENTER y sal con Ctrl + X.
-
-Paso 2: Crear el lanzador bash wrapper en /usr/local/bin
-Ejecuta:
+1. Mover la aplicación a /opt
+Bash
+sudo mkdir -p /opt/ytdlp-gui
+sudo cp app.py /opt/ytdlp-gui/app.py
+sudo chmod 755 /opt/ytdlp-gui/app.py
+2. Crear el ejecutable global en /usr/local/bin
+Crea el script ejecutable:
 
 Bash
 sudo nano /usr/local/bin/ytdlp-gui
-Pega exactamente este contenido de 3 líneas:
+Pega el siguiente contenido:
 
 Bash
 #!/usr/bin/env bash
 export DISPLAY=${DISPLAY:-:0}
-python3 /opt/ytdlp-gui/app.py "$@"
-Guarda presionando Ctrl + O, confirma con ENTER y sal con Ctrl + X.
+exec python3 /opt/ytdlp-gui/app.py "$@"
+Guarda con Ctrl + O, confirma con Enter y sal con Ctrl + X.
 
-Paso 3: Asignar permisos y probar
-Ejecuta en la terminal:
+Otorga permisos de ejecución:
 
 Bash
-sudo chmod 755 /opt/ytdlp-gui/app.py
 sudo chmod +x /usr/local/bin/ytdlp-gui
-/usr/local/bin/ytdlp-gui
-Al lanzar la última línea /usr/local/bin/ytdlp-gui, la ventana de PyQt6 se desplegará inmediatamente en pantalla sin demoras y funcionará directamente desde el menú de inicio de Linux Mint.
-
-
-
-Instalación:
-
-Clona este repositorio:
+3. Integrar con el Menú de Aplicaciones de Linux Mint
+Para lanzar el programa desde el menú de inicio (Cinnamon/XFCE/MATE), crea el archivo .desktop:
 
 Bash
-git clone [https://github.com/TU_USUARIO/ytdlp-gui-mint.git](https://github.com/TU_USUARIO/ytdlp-gui-mint.git)
-cd ytdlp-gui-mint
-Instala las dependencias de Python requeridas:
+nano ~/.local/share/applications/ytdlp-gui.desktop
+Pega el siguiente contenido:
 
-Bash
-pip3 install PyQt6
-Uso
-Ejecuta el script principal desde la terminal:
+Ini, TOML
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=YT-DLP Downloader
+Comment=Descargador de audio y video con PyQt6
+Exec=/usr/local/bin/ytdlp-gui
+Icon=video-display
+Terminal=false
+Categories=Network;AudioVideo;
+Guarda con Ctrl + O, confirma con Enter y sal con Ctrl + X.
 
-Bash
-python3 main.py
-O da permisos de ejecución directos al archivo:
+🚀 Uso
+Desde la Terminal: Ejecuta ytdlp-gui desde cualquier directorio.
 
-Bash
-chmod +x main.py
-./main.py
+Desde el Menú: Abre el menú de Linux Mint y busca "YT-DLP Downloader" bajo la categoría Sonido y Video o Internet.
+
+
+---
+
+<ElicitationsGroup message="¿Qué te gustaría agregar o personalizar en el repositorio?">
+  <Elicitation label="Agregar un ícono personalizado SVG/PNG al archivo .desktop" query="¿Cómo agrego un ícono de imagen personalizado al archivo .desktop en Linux Mint?"/>
+  <Elicitation label="Generar un script ejecutable de instalación automática install.sh" query="Crea un script bash 'install.sh' para que automatice la copia a /opt y la creación del .desktop con un solo comando."/>
+</ElicitationsGroup>
