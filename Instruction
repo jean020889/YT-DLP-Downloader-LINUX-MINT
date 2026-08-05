@@ -30,3 +30,27 @@ sudo chmod 755 /opt/ytdlp-gui/app.py
 sudo chmod +x /usr/local/bin/ytdlp-gui
 /usr/local/bin/ytdlp-gui
 Al lanzar la última línea /usr/local/bin/ytdlp-gui, la ventana de PyQt6 se desplegará inmediatamente en pantalla sin demoras y funcionará directamente desde el menú de inicio de Linux Mint.
+
+
+
+Instalación:
+
+Clona este repositorio:
+
+Bash
+git clone [https://github.com/TU_USUARIO/ytdlp-gui-mint.git](https://github.com/TU_USUARIO/ytdlp-gui-mint.git)
+cd ytdlp-gui-mint
+Instala las dependencias de Python requeridas:
+
+Bash
+pip3 install PyQt6
+Uso
+Ejecuta el script principal desde la terminal:
+
+Bash
+python3 main.py
+O da permisos de ejecución directos al archivo:
+
+Bash
+chmod +x main.py
+./main.py
