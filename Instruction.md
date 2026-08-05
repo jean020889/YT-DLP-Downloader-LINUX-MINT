@@ -92,8 +92,10 @@ chmod +x app.py
 python3 app.py
 ```
 
+---------------------------------------------------------------------------------------------------------------------------
 
-ESPAÑOL
+
+# --------- ESPAÑOL -----------#
 
 # ⚙️ Guía Completa de Instalación y Despliegue en el Sistema
 
