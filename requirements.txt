@@ -1,5 +1,6 @@
 ytdlp-gui-mint/
 ├── main.py              # Tu código fuente principal
 ├── requirements.txt    # Dependencias (PyQt6)
-├── README.md           # Instrucciones de instalación y uso
+├── Intruction          # Instrucciones
+├── README.md           # Infromación general
 └── LICENSE             # Licencia (ej. MIT)
