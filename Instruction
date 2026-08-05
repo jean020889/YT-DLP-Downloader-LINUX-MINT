@@ -1,6 +1,32 @@
+
 Paso 1: Crear el archivo directamente en /opt
 Ejecuta en la terminal:
 
 Bash
 sudo nano /opt/ytdlp-gui/app.py
 Pega el código completo de main.py dentro del editor:
+
+
+Guarda presionando Ctrl + O, confirma con ENTER y sal con Ctrl + X.
+
+Paso 2: Crear el lanzador bash wrapper en /usr/local/bin
+Ejecuta:
+
+Bash
+sudo nano /usr/local/bin/ytdlp-gui
+Pega exactamente este contenido de 3 líneas:
+
+Bash
+#!/usr/bin/env bash
+export DISPLAY=${DISPLAY:-:0}
+python3 /opt/ytdlp-gui/app.py "$@"
+Guarda presionando Ctrl + O, confirma con ENTER y sal con Ctrl + X.
+
+Paso 3: Asignar permisos y probar
+Ejecuta en la terminal:
+
+Bash
+sudo chmod 755 /opt/ytdlp-gui/app.py
+sudo chmod +x /usr/local/bin/ytdlp-gui
+/usr/local/bin/ytdlp-gui
+Al lanzar la última línea /usr/local/bin/ytdlp-gui, la ventana de PyQt6 se desplegará inmediatamente en pantalla sin demoras y funcionará directamente desde el menú de inicio de Linux Mint.
