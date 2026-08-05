@@ -22,7 +22,7 @@ sudo nano /opt/ytdlp-gui/app.py
 
 ```
 
-> **Nota:** Pega dentro el código de Python correspondiente a la interfaz gráfica. (main.py)
+> **Nota:** Pega dentro el código de Python correspondiente a la interfaz gráfica. (app.py)
 
 Guarda presionando `Ctrl + O`, confirma con `ENTER` y sal del editor con `Ctrl + X`.
 
