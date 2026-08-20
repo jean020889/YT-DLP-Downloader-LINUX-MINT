@@ -83,9 +83,12 @@ ytdlp-gui
 ### Option B: Quick Installation from Git Repository (Portable Mode)
 
 1. Clone this repository and navigate into the folder:
+   
 ```bash
 git clone https://github.com/jean020889/YT-DLP-Downloader-LINUX-MINT.git
 cd YT-DLP-Downloader-LINUX-MINT
+chmod +x install.sh
+./install.sh
 ```
 
 2. Grant permissions and launch the main script:
@@ -194,14 +197,17 @@ ytdlp-gui
 ### Opción B: Instalación Rápida desde Repositorio Git (Modo Portátil)
 
 1. Clona este repositorio y navega a la carpeta:
+   
 ```bash
-git clone [https://github.com/jean020889/YT-DLP-Downloader-LINUX-MINT.git](https://github.com/jean020889/YT-DLP-Downloader-LINUX-MINT.git)
+git clone https://github.com/jean020889/YT-DLP-Downloader-LINUX-MINT.git
 cd YT-DLP-Downloader-LINUX-MINT
+chmod +x install.sh
+./install.sh
 
 ```
 
-
 2. Otorga permisos e inicia el script principal:
+   
 ```bash
 chmod +x app.py
 python3 app.py
