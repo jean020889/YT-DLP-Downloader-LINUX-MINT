@@ -1,3 +1,5 @@
+## Este programa fue instalado manualmente como un binario o script ejecutable y no pertenece a ningún gestor de paquetes (como APT o Flatpak).
+
 ## Para eliminarlo por completo, debes borrar el archivo ejecutable principal y limpiar los accesos directos o archivos de configuración residuales.
 
 ### Pasos de desinstalación:
