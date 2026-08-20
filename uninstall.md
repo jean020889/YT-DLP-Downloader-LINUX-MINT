@@ -26,6 +26,3 @@ rm -rf ~/.cache/*ytdlp*
 
 ```
 
-
-
-¿El programa utilizaba algún entorno virtual de Python (`venv`) o dependencias globales adicionales que debamos limpiar?
