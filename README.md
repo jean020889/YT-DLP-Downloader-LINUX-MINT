@@ -27,8 +27,10 @@ A lightweight graphical user interface (GUI) developed in Python and PyQt6 actin
 The system must have the `yt-dlp` binary and core system tools installed (such as `ffmpeg` for audio conversion):
 
 ```bash
-sudo apt update
-sudo apt install python3 python3-pip ffmpeg yt-dlp -y
+git clone https://github.com/jean020889/YT-DLP-Downloader-LINUX-MINT.git
+cd YT-DLP-Downloader-LINUX-MINT
+chmod +x install.sh
+./install.sh
 ```
 
 # ------------------------------- ESPAÑOL ----------------------------------
@@ -60,5 +62,8 @@ Una interfaz gráfica (GUI) ligera desarrollada en Python y PyQt6 como wrapper f
 Es necesario tener instalado en el sistema el binario `yt-dlp` y las herramientas del sistema (como `ffmpeg` para la conversión de audio):
 
 ```bash
-sudo apt update
-sudo apt install python3 python3-pip ffmpeg yt-dlp -y
+git clone https://github.com/jean020889/YT-DLP-Downloader-LINUX-MINT.git
+cd YT-DLP-Downloader-LINUX-MINT
+chmod +x install.sh
+./install.sh
+```
